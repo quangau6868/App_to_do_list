@@ -121,6 +121,7 @@ public class DBHelper extends SQLiteOpenHelper {
             }
             cursor.close();
         }
+        // return
         return null; // Trả về null nếu không tìm thấy
     }
 }
