@@ -1,6 +1,9 @@
 Đây là ứng dụng ghi chú 
 Sử dụng ngôn ngữ java và SQLite
 Màn hình trong ứng dụng
+
+
+
 ![image](https://github.com/user-attachments/assets/41f34d65-8498-4584-ba1f-d0477fbb3f50)
 ![image](https://github.com/user-attachments/assets/c0a7e029-dbed-465b-94f2-5fadf40066d5)
 ![image](https://github.com/user-attachments/assets/9ade3263-5507-4806-8ded-d80ca64a3cab)
