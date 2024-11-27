@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="Thanh di chuyển"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".activity.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHelloAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="Create an account"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/signup_person"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            android:hint="My name.."
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:hint="Michael@gmail.com"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/signup_Password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+            android:drawablePadding="10dp"
+            android:hint="********"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/signup_ForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/signup_btnSignIn"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded1"
+            android:backgroundTint="@color/orange"
+            android:text="Sign In"
+            android:onClick="addUser"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signup_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Or"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/signup_btnSignInWithGoogle"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/google"
+            android:drawablePadding="70dp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="Sign With Google"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/signup_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:drawablePadding="10dp"
+            android:text="By signing in, you accept the terms of service,"
+            android:textColor="@color/gray"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/signup_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:drawablePadding="10dp"
+            android:text="Guidelines and have read Privacy Policy."
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

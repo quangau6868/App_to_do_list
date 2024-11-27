@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa ghi chú"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <!-- Tiêu đề ghi chú -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Nội dung ghi chú -->
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Nội dung"
+        android:inputType="textMultiLine"
+        android:gravity="start|top"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+    <!-- Nút định dạng văn bản -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/boldButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="18sp"
+            android:background="#00BCD4" />
+
+        <Button
+            android:id="@+id/italicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textSize="18sp"
+            android:background="#FF5722" />
+
+        <Button
+            android:id="@+id/underlineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:textSize="18sp"
+            android:background="#009688" />
+    </LinearLayout>
+
+    <!-- Nút Save -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:background="@color/orange"
+        android:layout_marginTop="10dp" />
+
+    <!-- Nút Delete -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white" />
+
+    <!-- Nút Share -->
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="#03A9F4" />
+</LinearLayout>
